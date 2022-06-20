@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        display: none;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+    <div class="container">
+     
+      <div class="inner-container1">
+        <p>Bill</p>
+        
+        <input id="bill" class="inputbill" type="number" placeholder="0" />
+        <img class="img" src="images/icon-dollar.svg" alt="dollarimg">
+       
+        <p>Select Tip %</p>
+        <div class="tip">
+          <div class="tipPercent" >5%</div>
+          <div class="tipPercent">10%</div>
+          <div class="tipPercent">15%</div>
+          <div class="tipPercent">25%</div>
+          <div class="tipPercent">50%</div>
+          <input class="tipPercent" type="number" placeholder="Custom" />
+        </div>
+
+        <p>Number of People</p>
+        <input id="noofpeople" class="inputbill" type="number" placeholder="1" min="1" value="1" />
+        <img class="img" src="images/icon-person.svg" alt="dollarimg">
+
+      </div>
+      <div class="inner-container2">
+        <div class="tip-amount">
+          <span>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </span>
+          <span id="tip-amt">$0</span>
+        </div>
+
+        <div class="tip-amount">
+          <span><p>Total</p>
+            <p>/ person</p></span>
+          <span id="total">$0</span>
+        </div>
+
+        <button id="resetbtn" type="reset">Reset</button>
+      </div>
+    
+    </div>
+  </form>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

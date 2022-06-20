@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(186, 78%, 84%);
+    --Light-grayish-cyan: hsl(185, 37%, 74%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    /* font-size: 24px; */
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--Light-grayish-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    border: none;
+    text-align: right;
+}
+.img{
+    position: relative;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    background-color: var(--White);
+    padding: 2rem;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 48rem;
+}
+@media(max-width:550px){
+    .container{
+        width: fit-content;
+    }
+}
+.inputbill{
+    width: 20rem;
+    height: 1.8rem;
+    padding: 15px;
+    color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;;
+    background-color: var(--Very-light-grayish-cyan);
+    border-radius: 10px;
+    position: absolute;
+}
+.inner-container1{
+    
+}
+.inner-container2{
+    padding: 2rem;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+}
+.tip{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    border-radius: 5px;
+
+}
+.tipPercent{
+    background-color: var(--Very-dark-cyan);
+    text-align: center;
+    color: var(--White);
+    width: 5.5rem;
+    height: 1.5rem;
+    padding: 8px;
+    border-radius: 5px;
+}
+.tipPercent:hover{
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+}
+.tip-amount{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+#resetbtn{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--Strong-cyan);
+    width:20rem;
+    height: 3rem;
+    margin-top: 9rem;
+}
+#resetbtn:hover{
+    background-color: var(--Light-grayish-cyan);
+}
+span p:nth-child(1){
+    color:var(--White);
+    font-size: 15px;
+}
+span p:nth-child(2){
+    color:var(--Grayish-cyan);
+    font-size: 10px;    
+}
+span:nth-child(2) {
+    margin: 10px;
+    font-size: 45px;
+    color: var(--Strong-cyan);
+}
+.selected{
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
